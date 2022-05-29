@@ -1,6 +1,5 @@
 // STYLE
 import "./SignUp.css";
-import "../LogIn/LogIn.css";
 import "./SignUp.media.css";
 
 //HOOKS
@@ -11,6 +10,7 @@ import { Link } from "react-router-dom";
 
 // COMPONENTS
 import SocialMedia from "../SocialMedias";
+import Input from "../Input/Input.tsx";
 
 const SignUp = () => {
   const [user, setUser] = useState("");
@@ -126,58 +126,31 @@ const SignUp = () => {
         <div className="signup__right">
           <SocialMedia type="Sign up" />
           <form className="login__form" action="" onSubmit={checkErrors}>
-            <div className="login__form-box email">
-              <p>DisplayName</p>
-              <input
-                type="text"
-                className={`login__form-input ${userError && "error"}`}
-                maxLength="100"
-                value={user}
-                onChange={(e) => setUser(e.target.value)}
-              />
-              <p className={`login__form-error ${userError && "active"}`}>
-                User cannot be empty!
-              </p>
-            </div>
-            <div className="login__form-box email">
-              <p>Email</p>
-              <input
-                type="email"
-                className={`login__form-input ${emailError && "error"}`}
-                maxLength="100"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <p className={`login__form-error ${emailError && "active"}`}>
-                Email cannot be empty!
-              </p>
-            </div>
-            <div className="login__form-box password">
-              <div>
-                <p>Password</p>
-              </div>
-              <input
-                type="password"
-                className={`login__form-input ${passError && "error"}`}
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                minLength="8"
-              />
-              <p className={`login__form-error ${passError && "active"}`}>
-                Password cannot be empty!
-              </p>
+            <Input
+              name="DisplayName"
+              type="text"
+              value={user}
+              valueError={userError}
+              setValue={setUser}
+            />
 
-              <p className="signup__form-tip">
-                Passwords must contain at least eight characters, including at
-                least 1 letter and 1 number.
-              </p>
+            <Input
+              name="Email"
+              type="text"
+              value={email}
+              setValue={setEmail}
+              valueError={emailError}
+            />
 
-              {passErrorLength && (
-                <p className="login__form-error active">
-                  Password must be 8-16 characters.
-                </p>
-              )}
-            </div>
+            <Input
+              name="Password"
+              type="password"
+              value={password}
+              setValue={setPassword}
+              valueError={passError}
+              passErrorLength={passErrorLength}
+              passtip={true}
+            />
 
             <div className="signup__form-agreement">
               <input type="checkbox" />

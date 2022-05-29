@@ -1,0 +1,59 @@
+.input__form-box {
+  margin-bottom: 10px;
+}
+
+.input__form-box.password > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input__form-forgetPass {
+  font-size: 13px;
+  color: #59a4de;
+  cursor: pointer;
+}
+
+.input__form-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.input__form-box > div > p {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.input__form-input {
+  flex: 1;
+  padding: 7.8px 9.1px;
+  height: 32px;
+  border: 1px solid var(--primary-border-color);
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.input__form-input:focus {
+  outline: none;
+  border: 1px solid #59a4de;
+  box-shadow: 0 0 0 4px var(--blue-shadow);
+}
+
+.input__form-input.error {
+  border: 1px solid red;
+}
+
+.input__form-input.error:focus {
+  box-shadow: 0 0 0 4px var(--red-shadow);
+}
+
+.input__form-error {
+  display: none;
+}
+
+.input__form-error.active {
+  display: block;
+  font-size: 12px;
+  color: red;
+}

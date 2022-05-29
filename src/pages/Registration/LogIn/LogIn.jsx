@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 // COMPONENTS
 import SocialMedia from "../SocialMedias";
+import Input from "../Input/Input.tsx";
 
 const LogIn = () => {
   const [email, setEmail] = useState("");
@@ -62,50 +63,28 @@ const LogIn = () => {
         </div>
 
         {/* Social Media Buttons */}
-        <div style={{maxWidth: "278px", width: "100%"}}>
-
-        <SocialMedia type="Log in" />
+        <div style={{ maxWidth: "278px", width: "100%" }}>
+          <SocialMedia type="Log in" />
         </div>
 
         {/* FORM */}
         <form className="login__form" action="" onSubmit={checkErrors}>
-          <div className="login__form-box email">
-            <p>Email</p>
-            <input
-              type="email"
-              className={`login__form-input ${emailError && "error"}`}
-              maxLength="100"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <p className={`login__form-error ${emailError && "active"}`}>
-              Email cannot be empty!
-            </p>
-          </div>
-          <div className="login__form-box password">
-            <div>
-              <p>Password</p>
-              <Link to="/account-recovery" className="login__form-forgetPass">
-                Forgot Password?
-              </Link>
-            </div>
-            <input
-              type="password"
-              className={`login__form-input ${passError && "error"}`}
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              minLength="8"
-            />
-            <p className={`login__form-error ${passError && "active"}`}>
-              Password cannot be empty!
-            </p>
+          <Input
+            type="text"
+            name="Name"
+            value={email}
+            valueError={emailError}
+            setValue={setEmail}
+          />
 
-            {passErrorLength && (
-              <p className="login__form-error active">
-                Password must be 8-16 characters.
-              </p>
-            )}
-          </div>
+          <Input
+            type="password"
+            name="Password"
+            value={password}
+            valueError={passError}
+            setValue={setPassword}
+            passErrorLength={passErrorLength}
+          />
 
           <button className="login__form-button" target="submit">
             Log in
