@@ -1,4 +1,4 @@
-import { Footer } from './Layouts/Footer';
+import { Footer } from './Layouts/Footer/Footer';
 import './App.css';
 
 function App() {
