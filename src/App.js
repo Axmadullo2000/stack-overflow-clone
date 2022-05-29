@@ -1,6 +1,6 @@
-import { Header } from "./Layouts/header/Header";
-import { Footer } from "./Layouts/Footer";
 import Main from "./Layouts/main";
+import { Header } from "./Layouts/Header";
+import { Footer } from "./Layouts/Footer";
 import "./App.css";
 
 function App() {

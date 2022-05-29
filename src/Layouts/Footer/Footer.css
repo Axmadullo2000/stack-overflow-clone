@@ -1,0 +1,75 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+
+/* footer */
+
+footer {
+  width: 100%;
+  padding: 32px 0px 12px 0px;
+  background-color: #232629;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+footer .title {
+  font-size: 15px;
+  color: #babfc4;
+  text-transform: uppercase;
+}
+
+footer .site-footer-links {
+  margin-left: -30px;
+}
+
+footer .site-footer-links .js-gps-track {
+  color: #8a9096;
+  opacity: .8;
+  line-height: 13px;
+  font-size: 13px;
+}
+
+footer .site-footer-links .js-gps-track:hover {
+  opacity: 1;
+} 
+
+footer .social_media_links {
+  display: flex;
+  flex-direction: column;
+}
+
+footer .social_media_links a {
+  color: #9fa6ad;
+  font-size: 12px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-right: 10px;
+  opacity: .8;
+}
+
+footer .social_media_links a:hover {
+  opacity: 1;
+}
+
+footer .copyright {
+  font-size: 11px;
+  color: #838C95;
+  margin-top: 40px;
+  margin-left: 12px;
+}
+
+
+
+/* meadi queries */
+
+@media (max-width: 1200px) {
+  footer .logo_web-app {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 772px) {
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,9 +1,12 @@
 // STYLES
 import "./ForgetPassword.css";
-import "../LogIn/LogIn.css";
 
 // HOOKS
 import { useState } from "react";
+
+// COMPONENTS
+import Input from "../Input/Input.tsx";
+import { Header } from "../../../Layouts/Header";
 
 const ForgetPassword = () => {
   const [email, setEmail] = useState("");
@@ -25,7 +28,7 @@ const ForgetPassword = () => {
 
   return (
     <div className="forgetpassword">
-      {/* HEADER */}
+      <Header />
       <div className="forgetpassword__container">
         <div className="forgetpassword__box">
           <p>
@@ -39,19 +42,13 @@ const ForgetPassword = () => {
             className="forgetpassword__form"
             onSubmit={checkError}
           >
-            <div className="login__form-box email">
-              <p>Email</p>
-              <input
-                type="email"
-                className={`login__form-input ${emailError && "error"}`}
-                maxLength="100"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <p className={`login__form-error ${emailError && "active"}`}>
-                Invalid Email!
-              </p>
-            </div>
+            <Input
+              name="Email"
+              type="email"
+              value={email}
+              setValue={setEmail}
+              valueError={emailError}
+            />
             <button className="login__form-button" target="submit">
               Send recovery email
             </button>

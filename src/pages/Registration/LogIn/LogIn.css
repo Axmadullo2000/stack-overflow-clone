@@ -16,15 +16,15 @@ p {
 }
 
 .login__container {
-  max-width: 1264px;
+  max-width: var(--primary-container);
   width: 100%;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 10px;
+  padding: 10px;
 }
 .login__logo-box {
   width: 35px;
@@ -52,66 +52,6 @@ p {
   border-radius: 7px;
   color: var(--text-color);
   margin-bottom: 24px;
-}
-
-.login__form-box.email {
-  margin-bottom: 10px;
-}
-
-.login__form-box.password > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.login__form-forgetPass {
-  font-size: 13px;
-  color: #59a4de;
-  cursor: pointer;
-}
-
-.login__form-box {
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-}
-
-.login__form-box > div > p {
-  font-weight: 400;
-  cursor: pointer;
-}
-
-.login__form-input {
-  flex: 1;
-  padding: 7.8px 9.1px;
-  height: 32px;
-  border: 1px solid var(--primary-border-color);
-  border-radius: 5px;
-  font-size: 13px;
-}
-
-.login__form-input:focus {
-  outline: none;
-  border: 1px solid #59a4de;
-  box-shadow: 0 0 0 4px var(--blue-shadow);
-}
-
-.login__form-input.error {
-  border: 1px solid red;
-}
-
-.login__form-input.error:focus {
-  box-shadow: 0 0 0 4px var(--red-shadow);
-}
-
-.login__form-error {
-  display: none;
-}
-
-.login__form-error.active {
-  display: block;
-  font-size: 12px;
-  color: red;
 }
 
 .login__form-button {
