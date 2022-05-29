@@ -25,7 +25,7 @@ const Header = () => {
             <ul className="sidebar-nav">
               <li className="mb-1">PUBLIC</li>
               <li>
-                <Link to="" className="nav-link ps-0">
+                <Link to="/" className="nav-link ps-0">
                   <svg
                     aria-hidden="true"
                     fill="#838c95"
@@ -58,7 +58,7 @@ const Header = () => {
           </div>
         ) : null}
 
-        <Link to="#" className="navbar-brand d-flex align-items-center">
+        <Link to="/" className="navbar-brand d-flex align-items-center">
           <svg
             className="mb-1"
             width="30"
@@ -111,13 +111,13 @@ const Header = () => {
         </div>
         <div className="register ps-2">
           <Link
-            to="#"
+            to="/login"
             className="text-dark d-inline-block text-decoration-none sign"
           >
             Log in
           </Link>
           <Link
-            to="#"
+            to="/signup"
             className="text-light d-inline-block text-decoration-none sign sign--blue"
           >
             Sign up
