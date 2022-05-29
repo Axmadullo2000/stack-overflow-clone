@@ -16,7 +16,7 @@ p {
 }
 
 .login__container {
-  max-width: 1264px;
+  max-width: var(--primary-container);
   width: 100%;
   margin: 0 auto;
   min-height: 100vh;

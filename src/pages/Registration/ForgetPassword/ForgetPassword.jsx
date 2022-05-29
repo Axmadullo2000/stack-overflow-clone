@@ -6,6 +6,7 @@ import { useState } from "react";
 
 // COMPONENTS
 import Input from "../Input/Input.tsx";
+import { Header } from "../../../Layouts/Header";
 
 const ForgetPassword = () => {
   const [email, setEmail] = useState("");
@@ -27,7 +28,7 @@ const ForgetPassword = () => {
 
   return (
     <div className="forgetpassword">
-      {/* HEADER */}
+      <Header />
       <div className="forgetpassword__container">
         <div className="forgetpassword__box">
           <p>

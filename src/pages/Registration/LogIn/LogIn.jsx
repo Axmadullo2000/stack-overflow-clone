@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 // COMPONENTS
 import SocialMedia from "../SocialMedias";
 import Input from "../Input/Input.tsx";
+import { Header } from "../../../Layouts/Header";
 
 const LogIn = () => {
   const [email, setEmail] = useState("");
@@ -43,6 +44,7 @@ const LogIn = () => {
 
   return (
     <div className="login">
+      <Header />
       <div className="login__container">
         <div className="login__logo-box">
           <Link to="/">

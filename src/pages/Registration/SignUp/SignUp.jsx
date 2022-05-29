@@ -1,6 +1,6 @@
 // STYLE
-import "./SignUp.css";
-import "./SignUp.media.css";
+import "./styles/SignUp.css";
+import "./styles/SignUp.media.css";
 
 //HOOKS
 import { useState } from "react";
@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 // COMPONENTS
 import SocialMedia from "../SocialMedias";
 import Input from "../Input/Input.tsx";
+import { Header } from "../../../Layouts/Header";
 
 const SignUp = () => {
   const [user, setUser] = useState("");
@@ -50,6 +51,7 @@ const SignUp = () => {
 
   return (
     <div className="signup">
+      <Header />
       <div className="signup__container">
         {/* Left Side */}
         <div className="signup__left">
