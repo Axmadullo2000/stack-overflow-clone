@@ -1,0 +1,57 @@
+.login__sm-buttons {
+  width: 100%;
+}
+
+.login__sm-button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  border-radius: 7px;
+  font-size: 13px;
+}
+
+.login__sm-button:active {
+  box-shadow: 0 0 0 4px hsla(210, 8%, 15%, 0.1);
+}
+
+.login__sm-button.google {
+  background-color: white;
+  border: 1px solid var(--primary-border-color);
+}
+
+.login__sm-button:hover.google {
+  background-color: var(--button-hover-color);
+}
+
+.login__sm-button.github {
+  background-color: #2f3337;
+  border: 1px solid var(--primary-border-color);
+  color: white;
+}
+.login__sm-button:hover.github {
+  background-color: #232629;
+}
+
+.login__sm-button.facebook {
+  background-color: #385499;
+  border: 1px solid var(--primary-border-color);
+  color: white;
+}
+
+.login__sm-button.facebook:active {
+  box-shadow: 0 0 0 4px var(--blue-shadow);
+}
+.login__sm-button:hover.facebook {
+  background-color: #314a86;
+}
+
+.login__sm-button > svg {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  margin-right: 5px;
+}
