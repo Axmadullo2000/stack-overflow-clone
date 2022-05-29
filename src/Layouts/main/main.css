@@ -341,8 +341,12 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .blue-btn {
+    margin-bottom: 4px;
+  }
   .box {
     padding: 12px;
+    margin-bottom: 10px;
   }
   .slider-wrapper {
     text-align: center;
@@ -355,5 +359,8 @@
   }
   .swiper-slide {
     font-size: 33px;
+  }
+  .statistics-box {
+    margin-bottom: 5px;
   }
 }
