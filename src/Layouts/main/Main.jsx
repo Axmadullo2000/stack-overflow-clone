@@ -1,11 +1,16 @@
 import React from "react";
-import "./main.css";
 // Import Swiper React components
+
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 import { Pagination, Autoplay } from "swiper";
 
+// React Link for routing
+import { Link } from "react-router-dom";
+
+import "./main.css";
+
 // Import Swiper styles
-import "swiper/css";
 import publicLogo from "../../assets/images/illo-public.svg";
 import teamsLogo from "../../assets/images/illo-teams.svg";
 
@@ -65,11 +70,11 @@ const Main = () => {
                   Find the best answer to your technical question, help others
                   answer theirs
                 </h2>
-                <a href="#" className="orange-btn">
+                <Link to="#" className="orange-btn">
                   Join the community
-                </a>
+                </Link>
                 <p className="box-paragrph">
-                  or <a href="#">search content</a>
+                  or <Link to="#">search content</Link>
                 </p>
               </div>
             </div>
@@ -103,7 +108,7 @@ const Main = () => {
                   <span className="divider-text">Get started</span>
                   <span className="border"></span>
                 </div>
-                <a href="#" className="blue-btn">
+                <Link to="#" className="blue-btn">
                   For large organizations{" "}
                   <svg
                     aria-hidden="true"
@@ -117,8 +122,8 @@ const Main = () => {
                       fill="currentColor"
                     ></path>
                   </svg>
-                </a>
-                <a href="#" className="blue-btn ml-8">
+                </Link>
+                <Link to="#" className="blue-btn ml-8">
                   For small teams{" "}
                   <svg
                     aria-hidden="true"
@@ -132,7 +137,7 @@ const Main = () => {
                       fill="currentColor"
                     ></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -198,11 +203,11 @@ const Main = () => {
                 technical challenges, and one of the most popular websites in
                 the world.
               </p>
-              <a href="#" className="orange-btn">
+              <Link to="#" className="orange-btn">
                 Join the community
-              </a>
+              </Link>
               <p className="box-paragrph">
-                or <a href="#">search content</a>
+                or <Link to="#">search content</Link>
               </p>
             </div>
           </div>
@@ -224,7 +229,7 @@ const Main = () => {
                 <span className="divider-text">Get started</span>
                 <span className="border"></span>
               </div>
-              <a href="#" className="blue-btn">
+              <Link to="#" className="blue-btn">
                 For large organizations{" "}
                 <svg
                   aria-hidden="true"
@@ -238,8 +243,8 @@ const Main = () => {
                     fill="currentColor"
                   ></path>
                 </svg>
-              </a>
-              <a href="#" className="blue-btn ml-8">
+              </Link>
+              <Link to="#" className="blue-btn ml-8">
                 For small teams{" "}
                 <svg
                   aria-hidden="true"
@@ -253,7 +258,7 @@ const Main = () => {
                     fill="currentColor"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
