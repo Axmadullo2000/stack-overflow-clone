@@ -7,7 +7,7 @@ import "./style/Header.scss";
 const Header = () => {
   const [shop, setShop] = useState(false);
   return (
-    <nav className="navbar mb-5">
+    <nav className="navbar">
       <div className="container-xl px-2 flex-nowrap">
         <div
           className="sidebar-left position-relative me-2"
