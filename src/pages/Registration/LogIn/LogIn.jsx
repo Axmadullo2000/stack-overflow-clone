@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 // COMPONENTS
 import SocialMedia from "../SocialMedias";
 import Input from "../Input/Input.tsx";
-import { Header } from "../../../Layouts/Header";
+import { Header } from "../../../Layouts/header";
 
 const LogIn = () => {
   const [email, setEmail] = useState("");

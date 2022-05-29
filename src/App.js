@@ -1,5 +1,5 @@
 import Main from "./Layouts/main";
-import { Header } from "./Layouts/Header";
+import { Header } from "./Layouts/header";
 import { Footer } from "./Layouts/Footer";
 import "./App.css";
 
