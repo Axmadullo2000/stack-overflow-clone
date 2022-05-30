@@ -11,7 +11,7 @@ router.get('/auth/google',
 
 router.get('/google/collback', 
     passport.authenticate('google', {
-        successRedirect:'/product',
+        successRedirect:'/registered',
         failureRedirect:"/auth/failure"
     })
 );
@@ -22,7 +22,7 @@ router.get('/auth/logout', (req, res) => {
     res.send("Goodby")
 });
 
-router.get('/product', (req, res) => {
+router.get('/registered', (req, res) => {
     res.status(200).json(req.user)
 })
 
