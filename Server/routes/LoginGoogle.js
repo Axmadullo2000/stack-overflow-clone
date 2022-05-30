@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const passport = require("passport");
+const isLogin = require("../Middleware/isLogin")
 
 const router= Router()
 
@@ -22,7 +23,7 @@ router.get('/auth/logout', (req, res) => {
     res.send("Goodby")
 });
 
-router.get('/registered', (req, res) => {
+router.get('/registered', isLogin, (req, res) => {
     res.status(200).json(req.user)
 })
 
