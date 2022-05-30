@@ -19,7 +19,7 @@ p {
   max-width: var(--primary-container);
   width: 100%;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   align-items: center;
