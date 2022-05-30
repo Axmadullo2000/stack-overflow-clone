@@ -6,7 +6,7 @@ import { useState } from "react";
 
 // COMPONENTS
 import Input from "../Input/Input.tsx";
-import { Header } from "../../../Layouts/header";
+import { Header } from "../../../Layouts/Header";
 
 const ForgetPassword = () => {
   const [email, setEmail] = useState("");

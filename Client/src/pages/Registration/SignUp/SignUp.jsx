@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 // COMPONENTS
 import SocialMedia from "../SocialMedias";
 import Input from "../Input/Input.tsx";
-import { Header } from "../../../Layouts/header";
+import { Header } from "../../../Layouts/Header";
 
 const SignUp = () => {
   const [user, setUser] = useState("");
